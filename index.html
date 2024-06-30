@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabulator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="top-header">
+        <div class="header-left">
+            <h1>Tabulator</h1>
+        </div>
+        <div class="header-right">
+            <a href="#projeto1">Projeto 1</a>
+            <a href="#projeto2">Projeto 2</a>
+            <a href="#projeto3">Projeto 3</a>
+        </div>
+    </header>
+    
+    <div class="main-container">
+        <div class="header">
+            <h2>Organize e guarde suas anotações em abas, e recupere notas rapidamente.</h2>
+        </div>
+        <div class="content-container">
+            <div class="sidebar">
+                <div class="control-panel">
+                    <button id="create-bank">Criar Banco</button>
+                    <button id="edit-bank">Editar Banco</button>
+                    <button id="delete-bank">Excluir Banco</button>
+                    <select id="bank-selector">
+                        <option value="" disabled selected>Selecione um Banco</option>
+                    </select>
+                    <button id="create-tab">Criar Aba</button>
+                </div>
+            </div>
+            <div class="tabs-container" id="tabs-container"></div>
+        </div>
+    </div>
+
+    <!-- Modal para Criar/Editar Banco -->
+    <div id="bank-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="close-bank-modal">&times;</span>
+            <h2 id="bank-modal-title">Criar/Editar Banco</h2>
+            <input type="text" id="new-bank-name" placeholder="Nome do Banco">
+            <button id="save-bank">Salvar Banco</button>
+        </div>
+    </div>
+
+    <!-- Modal para Criar/Editar Aba -->
+    <div id="tab-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="close-tab-modal">&times;</span>
+            <h2 id="tab-modal-title">Criar/Editar Aba</h2>
+            <input type="text" id="new-tab-name" placeholder="Nome da Aba">
+            <textarea id="new-tab-content" placeholder="Conteúdo da Aba"></textarea>
+            <button id="save-tab">Salvar Aba</button>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div>
+            <p>&copy; 2024 José Roberto Friederich.</p>
+            <p>Contato: joserobertofriederich@gmail.com</a></p>
+        </div>
+        <div>
+            <p>Redes sociais:
+                <a href="https://www.linkedin.com/in/joserobertofg/" target="_blank">LinkedIn</a> |
+                <a href="https://github.com/terasider" target="_blank">GitHub</a>
+            </p>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
